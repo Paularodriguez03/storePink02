@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+
+    /* position: absolute; */
+    width: 100%;
+    height: 25%;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, #FFFFFF 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 28px;
+}
+
+.header .logo{
+    width: auto;
+    height: 50px;
+    left: 50px;
+    top: 10px;
+}
+
+.header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.header .behind i{
+    width: 20px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header button{
+    border-radius: 10px;
+    border: none;
+    color: #FF5757;
+    background-color: white;
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.267);
+
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.header button:hover{
+    color: rgb(255, 255, 255);
+    background-color: #FF5757;
+}
+
+.categories_two .P{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.categories_two h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.menu_two{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 420px;
+    width: 90%;
+
+    overflow-y: scroll;
+    margin: 0px 10px 10px 10px;
+    margin-left: 10px;
+}
+
+.container_total_two{
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 1fr;
+    height: auto;
+    width: 100%;
+
+    background: white;
+    /* border-radius: 28px; */
+    /* box-shadow: 0 -9px 20px 0px rgba(0, 0, 0, 0.25); */
+}
+
+.container_total_two h2{
+    margin-left: 20px;
+}
+.container_total_two h3{
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.container_total_two .btn_total{
+    margin-top: 10px;
+    margin-left: 120px;
+    border-radius: 20px;
+    border: none;
+    width: 80px;
+    height: 50px;
+    background-color:#FF5757;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.container_total_two i{
+    margin-left: 5px;
+    color: #FFFFFF;
+}
+
+.container_total_two .btn_total:hover{
+    background-color: seagreen;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 3px 4px 9px 0 rgba(0, 0, 0, 0.582);
+   
+}
+
+/*Responsive*/
+
+@media (width: 411px) {
+
+    ul{
+        list-style-type: none;
+       text-align: center;
+    }
+    .categories_two .container li{
+        display: inline;
+        text-align: center;
+    }
+
+    .menu_two{
+        height: 800px;
+        margin-left: 20px;
+    }
+    .container_total_two h2{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .container_total_two h3{
+        margin-left: 15px;
+        margin-top: 35px;
+    }
+    
+    .container_total_two button{
+        margin: 20px 20px;
+        margin-left: 80px;
+    }
+    
+}
+
+@media (height: 568px) {
+    .menu_two {
+        height: 340px;
+        margin-left: 15px;
+    }
+
+    .container_total_two h2{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .container_total_two h3{
+        margin-left: 15px;
+        margin-top: 35px;
+    }
+    
+    .container_total_two button{
+        margin: 20px 20px;
+        margin-left: 50px;
+    }
+    
+}
+
+@media (height: 653px) {
+    .menu_two{
+        height: 430px;
+        margin-left: 10px;
+    }
+    .container_total_two .btn_total {
+        margin-top: 10px;
+        margin-left: 90px;
+    }
+}
+
+@media (height: 667px) {
+    .menu_two {
+        height: 430px;
+        margin-left: 15px;
+    }
+    .container_total_two h2{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .container_total_two h3{
+        margin-left: 15px;
+        margin-top: 35px;
+    }
+    
+    .container_total_two button{
+        margin: 20px 20px;
+        margin-left: 80px;
+    }
+}
+
+@media (height: 720px) {
+    .menu_two {
+        height: 500px;
+        margin-left: 15px;
+    }
+
+    .container_total_two .btn_total {
+        margin-top: 10px;
+        margin-left: 220px;
+    }
+}
+
+@media (height: 731px) {
+    .menu_two{
+        height: 500px;
+        margin-left: 25px;
+    }
+}
+
+@media (height: 736px) {
+    .menu_two{
+        height: 520px;
+        margin-left: 25px;
+    }
+}
+@media (height: 823px) {
+    .menu_two{
+        
+        height: 600px;
+        margin-left: 20px;
+    }
+    .container_total_two h2{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .container_total_two h3{
+        margin-left: 15px;
+        margin-top: 35px;
+    }
+    
+    .container_total_two button{
+        margin: 20px 20px;
+        margin-left: 80px;
+    }
+    
+    .container_total_two i{
+        margin-left: 2px;
+    }
+}
+
+@media (height: 812px) {
+    .menu_two{
+        height: 580px;
+        margin-left: 20px;
+    }
+    .container_total_two h2{
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .container_total_two h3{
+        margin-left: 15px;
+        margin-top: 35px;
+    }
+    
+    .container_total_two button{
+        margin: 20px 20px;
+        margin-left: 70px;
+    }
+    
+    .container_total_two i{
+        margin-left: 2px;
+    }
+}
+
+@media (height: 1024px) {
+
+    .header{
+        height: 100px;
+    }
+    .header .logo{
+        width: 100px;
+        height: auto;
+    }
+    .header .behind{
+        width: 50px;
+        height: 50px;
+    }
+    .header .behind i {
+        font-size: 25px;
+        margin-left: 8px;
+    }
+
+    .categories_two h2{
+        margin-left: 30px;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    
+    .categories_two .container{
+        top: 210px;
+
+    }
+    .container button{
+        margin: 8px;
+        padding: 10px;
+        width: 150px;
+        font-size: 15px;
+    }
+    .menu_two{
+        top: 300px;
+        height: 725px;
+        margin-left: 45px;
+    }
+
+    .container_total_two{
+        height: 120px;
+    }
+    .container_total_two h2{
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 35px;
+    }
+    .container_total_two h3{
+        margin-left: 30px;
+        margin-top: 55px;
+        font-size: 25px;
+    }
+    
+    .container_total_two .btn_total{
+        width: 160px;
+        font-size: 25px;
+        margin-left: 250px;
+        margin-top: 50px;
+    }
+    
+    .container_total_two i{
+        margin-left: 5px;
+    }
+}
+
+@media (height: 1366px) {
+    .header{
+        height: 160px;
+    }
+    .header .logo{
+        width: auto;
+        height: 160px;
+        margin-left: 150px;
+    }
+    
+    .header a{
+        margin-top: 40px;
+        font-size: 40px;
+    }
+
+    .header .behind{
+        width: 50px;
+        height: 50px;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    .header .behind i {
+        font-size: 25px;
+        margin-left: 8px;
+    }
+
+    .categories_two h2{
+        margin-left: 30px;
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    
+    .categories_two .container{
+        top: 240px;
+
+    }
+
+    .container button{
+        margin: 8px;
+        padding: 10px;
+        width: 150px;
+        font-size: 20px;
+    }
+    .menu_two{
+        height: 980px;
+        margin-left: 60px;
+    }
+
+    .container_total_two{
+        height: 150px;
+    }
+    .container_total_two h2{
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 40px;
+    }
+    .container_total_two h3{
+        margin-left: 30px;
+        margin-top: 55px;
+        font-size: 30px;
+    }
+    
+    .container_total_two .btn_total{
+        width: 160px;
+        font-size: 25px;
+        margin-left: 380px;
+        margin-top: 50px;
+    }
+    
+    .container_total_two i{
+        margin-left: 5px;
+    }
+}
